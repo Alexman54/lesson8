@@ -1,0 +1,499 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue-CondensedBlack.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-CondensedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* -------------------------------------- */
+
+.h3{
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+	box-shadow: 0 0 5px #000;
+
+}
+
+.h2{
+	background-color: violet;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	padding: 25px;
+	border: 5px solid blueviolet;
+	margin-bottom: 50px;
+
+}
+
+.header{
+	text-align: center;
+}
+.divtitle{
+	display: inline-block;
+}
+
+.title{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 80px;
+	color: orange;
+	text-shadow: 1px 1px 5px red;
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+.hiddentitle{
+	display: none;
+	font-weight: 700;
+	font-size: 80px;
+	color: orange;
+	text-shadow: 1px 1px 5px red;
+	margin-bottom: 150px;
+
+}
+
+
+.title:hover {
+	color: greenyellow;
+	text-shadow: 1px 1px 10px lawngreen;
+	margin-bottom: 30px;
+}
+
+.title:hover + *{
+	display: inline-block;
+	box-shadow: 0 0 10px 10px yellow;
+	margin-bottom: 40px;
+}
+
+
+
+.blokhover {
+	margin: 0 0 60px 0;
+}
+
+.divhover {
+	text-align: center;
+}
+.link1 {
+	background-color: violet;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 4px;
+	padding: 15px;
+	color: royalblue;
+	box-shadow: 0px 4px 2px blueviolet;
+}
+.link1:hover{
+	color: yellow;
+}
+
+.link1:visited{
+	color: rgb(105, 138, 240);
+}
+
+.link1:active{
+	box-shadow: none;
+	margin: -4px 0 0 0;
+}
+
+
+
+
+.spi1 {
+	margin-bottom: 100px;
+
+}
+.blockspi{
+	background-color: silver;
+	max-width: 715px;
+	border: 5px solid blueviolet;
+	margin: 0 auto;
+	font-size: 0;
+	
+}
+.ul1{
+	width: 400px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: justify;
+	white-space: nowrap;
+	margin-right: 5px;
+
+
+
+
+}
+.ul1 li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.ul1 li a{
+	font-size: 25px;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.ul1 li:nth-child(1):hover::before{
+	content: ">";
+	color: yellow;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(1):hover::after{
+	content: " <";
+	color: yellow;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(2):hover::before{
+	content: ">";
+	color: blue;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(2):hover::after{
+	content: " <";
+	color: blue;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(3):hover::before{
+	content: ">";
+	color: red;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(3):hover::after{
+	content: " <";
+	color: red;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(4):hover::before{
+	content: ">";
+	color: green;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.ul1 li:nth-child(4):hover::after{
+	content: " <";
+	color: green;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+
+.blockbottom, .blockbottom2, .blockbotto3, .blockbottom4{
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+
+}
+
+.blockbottom{
+
+	background-color: black;
+}
+.blockspi:not(:hover) #id1{
+	background-color: black;
+}
+
+
+.blockbottom:target{
+	background-color: yellow;
+}
+.blockbottom2:target .blockbottom{
+	background-color: blue;
+}
+.blockbottom3:target .blockbottom2 .blockbottom{
+	background-color: red;
+}
+
+.blockbottom4:target .blockbottom3 .blockbottom2 .blockbottom{
+	background-color: green;
+}
+
+
+.blocktext {
+	margin-bottom: 100px;
+
+}
+.ptextzd1 {
+	margin: 0 auto 50px auto;
+	background-color: brown;
+	font-size: 20px;
+	color: #fff;
+	max-width: 400px;
+	padding: 20px;
+	text-indent: 20px;
+}
+
+.ptextzd1::first-letter{
+	font-size: 21px;
+	font-weight: 700;
+	color: red;
+}
+.ptextzd1::first-line{
+	color: yellow;
+}
+
+.spanzd1text{
+	display: inline-block;
+}
+.zd1text, .spanzd1text{
+
+	background-color: blue;
+	max-width: 400px;
+	color: coral;
+	padding: 15px;
+	margin: 10px;
+	font-size: 25px;
+
+}
+
+
+.divptext p:nth-child(even){
+	background-color: red;
+	color: yellow;
+
+}
+
+.divptext p:first-child{
+	background-color: yellow;
+	color: green;
+}
+
+.divptext p:first-of-type{
+	background-color: orange;
+	color: green;
+
+}
+
+.divptext p:last-child{
+	background-color: violet;
+	color: blanchedalmond;
+}
+
+
+
+
+
+
+.zd3{
+	margin-bottom: 100px;
+
+}
+.blockzd3 {
+	margin: 0 auto;
+	max-width: 1020px;
+	font-family: "Roboto", sans-serif;
+	background-color: #F5F5F5;
+}
+.zd3top {
+	font-size: 0;
+	margin-bottom: 68px;
+}
+
+.h3top {
+	display: block;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 27px;
+	min-height: 27px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	margin-bottom: 25px;
+}
+.h3top::before{
+	content: "";
+	display: inline-block;
+	width: 28px;
+	height: 27px;
+	vertical-align: top;
+	background: url("../img/icons/Overline_Mark.svg") 0 0 no-repeat;
+	margin: 0 5px 0 0;
+
+}
+
+.pmidle {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+}
+
+.zd3bottom *:not(:last-child){
+	margin-right: 20px;
+}
+
+.zd3bottom div:first-child::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/dog_love_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0 20px 0 0;
+}
+
+
+.zd3bottom div:nth-child(2)::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/dog_vet_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0 20px 0 0;
+}
+
+.zd3bottom div:last-child::before{
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/dog_stream_24x.svg") 0 0 no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0 20px 0 0;
+}
+
+
+
+.divs1 {
+	display: inline-block;
+	width: 324px;
+}
+
+.pbottom {
+	display: inline-block;
+	max-width: 235px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+.zd3span{
+	display: block;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 35px;
+	color: #F2726F;
+	margin-bottom: 18px;
+}
+
+
+.zd4 {
+	margin-bottom: 200px;
+}
+.blockzd4 {
+	font-family: "HelveticaNeue";
+	max-width: 255px;
+	margin: 0 auto;
+	padding: 24px 24px 60px 24px;
+	background: #252525;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+
+.blockzd4 *:first-child{
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	
+}
+
+.blockzd4 *:first-child::after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 56px;
+	background-color: #34C759;
+	margin: 15px 0 24px 0;
+}
+
+.blockzd4 *:last-child{
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+	
+}
